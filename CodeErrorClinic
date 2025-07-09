@@ -1,0 +1,72 @@
+# Incorrect: the +1 was making 0=1 and 1=2  right?
+numbers = [1, 2, 3, 4, 5]
+for i in range(len(numbers)):
+   print(numbers[i])
+
+# Incorrect:
+def calculate_area(radius): #missing colon
+   area = 3.14 * radius ** 2
+   return area
+radius = 5
+print(calculate_area(radius))
+
+# Incorrect:
+def is_even(number):
+   if number % 2 == 0: #missing colon
+       return True
+   else: #missing colon
+       return False
+ 
+print(is_even(4))
+print(is_even(7))
+
+# Incorrect:
+for i in range(5): #missing colon
+   print(i)
+
+   # Incorrect: there was no f string 
+def greet(name):
+   return f"Hello,  {name}"
+print(greet("Alice"))
+
+# Incorrect: needed to indent after colon
+numbers = [1, 2, 3, 4, 5]
+sum = 0
+for number in numbers:
+    sum += number
+print("Sum of numbers:", sum)
+
+# Incorrect: 5 * 4 * 2 * 1
+def factorial(n):
+   if n == 0:
+       return 1
+   else:
+       return n * factorial(n-1)
+ 
+print(factorial(5))
+
+# Incorrect:
+name = input("Enter your name: ")
+if name == ("Alice" or "Bob"):# name == "alice" or name == "bob"
+   print("Hello, " + name)
+else:
+   print("Hello, stranger!")
+
+# Incorrect: change 0 to 5 because you can't divide by 0
+def divide_numbers(x, y):
+   result = x / y
+   return result
+ 
+num1 = 10
+num2 = 5
+print(divide_numbers(num1, num2))
+
+
+
+
+
+
+
+
+
+
